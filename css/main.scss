@@ -34,13 +34,14 @@ nav {
 
     li {
       display: inline-block;
-      margin: 0 30px;
-      transition: 300ms ease;
       position: relative;
+      margin: 0 30px;
       transition: 500ms ease;
+
       &:not(.active-page):hover {
         font-weight: 600;
       }
+
       &:not(.active-page)::after {
         position: absolute;
         content: '';
@@ -52,6 +53,7 @@ nav {
         left: 0;
         transition: 500ms ease;
       }
+
       &:hover::after {
         width: 100%;
       }
