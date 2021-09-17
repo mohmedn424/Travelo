@@ -190,9 +190,10 @@ nav {
   margin-bottom: 100px;
   .features-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 40px;
+    column-gap: 5em;
     align-items: center;
     .card {
       max-width: 370px;
@@ -422,6 +423,10 @@ nav {
     column-gap: 3em;
     text-align: left;
     justify-content: center;
+
+    @media only screen and (max-width: 1400px) {
+      grid-template-columns: 1fr;
+    }
     .customer-card {
       width: 100%;
       padding: 60px 100px 40px;
@@ -467,6 +472,11 @@ nav {
         }
         .customer-job {
           color: #848484;
+        }
+      }
+      @media only screen and (max-width: 1400px) {
+        .quote {
+          font-size: 20px;
         }
       }
     }
@@ -527,6 +537,11 @@ footer {
     float: right;
     img {
       margin-right: 10px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    ul {
+      display: none;
     }
   }
 }

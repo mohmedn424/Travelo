@@ -229,12 +229,13 @@ nav .btn-cta-nav:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 40px;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -530,6 +531,13 @@ nav .btn-cta-nav:hover {
           justify-content: center;
 }
 
+@media only screen and (max-width: 1400px) {
+  .happy-customers-section .customer-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .happy-customers-section .customer-container .customer-card {
   width: 100%;
   padding: 60px 100px 40px;
@@ -589,6 +597,12 @@ nav .btn-cta-nav:hover {
 
 .happy-customers-section .customer-container .customer-card .customer-info .customer-job {
   color: #848484;
+}
+
+@media only screen and (max-width: 1400px) {
+  .happy-customers-section .customer-container .customer-card .quote {
+    font-size: 20px;
+  }
 }
 
 footer {
@@ -664,5 +678,11 @@ footer .social-icons {
 
 footer .social-icons img {
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+  footer ul {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
