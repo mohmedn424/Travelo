@@ -429,12 +429,16 @@ nav .btn-cta-nav:hover {
   text-align: center;
 }
 
+.blog-section .blog-title {
+  font-size: 1.7em;
+}
+
 .blog-section .blogs-grid-container {
   height: 450px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 55% 1fr;
-      grid-template-columns: 55% 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-gap: 1em;
@@ -443,6 +447,7 @@ nav .btn-cta-nav:hover {
 }
 
 .blog-section .blogs-grid-container .blog-card {
+  margin-top: 0.3em;
   background-image: url(../Assets/Blogs/NoPath.png);
   background-size: cover;
   background-position: center;

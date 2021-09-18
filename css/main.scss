@@ -355,10 +355,13 @@ nav {
 }
 .blog-section {
   text-align: center;
+  .blog-title {
+    font-size: 1.7em;
+  }
   .blogs-grid-container {
     height: 450px;
     display: grid;
-    grid-template-columns: 55% 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
     grid-template-areas:
@@ -366,6 +369,7 @@ nav {
       'a c';
     margin-bottom: 50px;
     .blog-card {
+      margin-top: 0.3em;
       background-image: url(../Assets/Blogs/NoPath.png);
       background-size: cover;
       background-position: center;
